@@ -32,61 +32,61 @@
   </div>
 
   <h1>Privacy Policy</h1>
-  <p class="date">Effective Date: November 4, 2026</p>
+  <p class="date">Effective Date: November 7, 2026</p>
 
   <div class="highlight">
-    <p>Your dreams are private. Inkluna is designed to keep your data on your device. We do not receive your journal content or sleep data on our servers. Store purchases and any exports you choose are handled as described below.</p>
+    <p>Your dreams are private. Inkluna is designed to keep your journal on your device. Ocoee Studios does not operate a server that receives your journal entries or personal data.</p>
   </div>
 
   <h2>1. Information We Store</h2>
-  <p><strong>Data stored on your device only:</strong> Dream journal entries, voice notes, mood data, settings, themes, ink colors, fonts, passcode, and all personal preferences are stored locally on your device using local app storage. Journal entries are not uploaded to Ocoee Studios. Exports and any device-level backup services you enable are separate from Inkluna's local storage.</p>
-  <p><strong>Sleep data (optional):</strong> If you choose to connect a sleep data source, Inkluna reads sleep stage information on your device. On iOS, this uses Apple HealthKit to read sleep stages (Awake, REM, Core, Deep) from Apple Health. On Android, this uses Health Connect to read sleep session data. In both cases, sleep data is read-only, stays on your device, and is never transmitted to any server. Inkluna does not write sleep data. Sleep stages are estimates provided by your device or wearable and are displayed as such.</p>
-  <p><strong>Data we do NOT collect:</strong> We do not collect your name, email address, phone number, location, contacts, photos, browsing history, or any personal identifiers. We do not use tracking pixels, advertising SDKs, or analytics frameworks that profile users. Inkluna does not upload journal or sleep data to Ocoee Studios or an analytics service. Store purchase processing and exports you choose may communicate with the services described below.</p>
+  <p><strong>Data stored on your device only:</strong> Dream journal entries, voice notes, mood data, settings, themes, ink colors, fonts, passcode, and all personal preferences are stored locally on your device using secure on-device storage. Journal data is not transmitted to Ocoee Studios or any third party. Exports you choose and device backups are governed separately.</p>
+  <p><strong>Sleep data (iOS):</strong> If you choose to connect Apple Health, Inkluna reads sleep stage data (Awake, REM, Core, Deep) from Apple Health on your device. This data is read-only, stays on your device, and is never transmitted to any server. Inkluna does not write to Apple Health. Sleep stages are estimates provided by Apple Watch and are displayed as such.</p>
+  <p><strong>Sleep data (Android):</strong> If you choose to connect Health Connect, Inkluna reads sleep stage data from Health Connect on your device. This data is read-only, stays on your device, and is never transmitted to any server. Inkluna does not write to Health Connect.</p>
+  <p><strong>Data we do NOT collect:</strong> We do not collect your name, email address, phone number, location, contacts, photos, or browsing history. We do not use tracking pixels, advertising SDKs, or analytics frameworks that profile users. Inkluna does not upload journal or sleep data to Ocoee Studios or an analytics service. Store purchase processing and exports you choose may communicate with the platform services described below.</p>
 
   <h2>2. Biometric Data</h2>
-  <p>Inkluna supports biometric authentication (Face ID and Touch ID on iOS; fingerprint and biometric on Android) for app lock. Biometric data is handled entirely by your device's operating system. We never access, store, or transmit biometric data. Authentication results are a simple yes/no — we never see your face or fingerprint.</p>
+  <p>Inkluna supports biometric authentication for app lock. On iOS, Face ID and Touch ID are handled by Apple's LocalAuthentication framework. On Android, fingerprint and face authentication are handled by the Android BiometricPrompt API. In both cases, biometric data is processed entirely on your device by the operating system. Inkluna never accesses, stores, or transmits biometric data. Authentication results are a simple yes/no — we never see your face or fingerprint.</p>
 
   <h2>3. How We Use Information</h2>
-  <p>Journal analysis and pattern calculations happen locally on your device. Inkluna uses your dream entries to display your journal, calculate patterns, populate your Dream Book, and show statistics. We do not use your dream content to train models, build user profiles, serve advertisements, or share with third parties.</p>
+  <p>Journal processing happens locally on your device. Inkluna uses your dream entries to display your journal, calculate patterns, populate your Dream Book, and show statistics. We do not use your dream content to train models, build user profiles, serve advertisements, or share with third parties.</p>
 
   <h2>4. Data Storage & Security</h2>
-  <p>All journal data is stored locally on your device. On iOS, your passcode is stored in the Keychain via secure encrypted storage. On Android, app-lock credentials are stored using encrypted storage backed by Android Keystore. App lock restricts access through Inkluna's interface; it does not mean that the entire journal database or exported files are encrypted. We recommend keeping your device updated and using a strong device passcode for maximum security.</p>
+  <p>All journal data is stored locally on your device. On iOS, your app-lock passcode is stored in the Keychain via secure encrypted storage. On Android, app-lock credentials are stored using encrypted storage backed by Android Keystore. App lock controls access through Inkluna; it does not encrypt the journal database or exported files. If your device is included in iCloud or Google backups, local app data may be part of those backups under the respective platform's terms. We recommend keeping your device updated and using a strong device passcode for maximum security.</p>
 
   <h2>5. Purchases</h2>
-  <p>Inkluna offers a one-time lifetime purchase to unlock premium features. On iOS, payments are processed by Apple through the App Store. On Android, payments are processed by Google through Google Play. We do not collect or store any payment information, credit card numbers, or billing details. The purchase library exchanges purchase information with the relevant store, and Inkluna checks purchase records to determine whether premium features are unlocked. Inkluna does not send purchase records to an Ocoee Studios purchase-validation server. The respective platform's privacy policy governs payment processing.</p>
+  <p>Inkluna offers a one-time lifetime purchase to unlock premium features. Payments are processed by Apple (App Store) or Google (Google Play). We do not collect or store credit card numbers, payment-method details, or billing addresses. Inkluna's purchase library exchanges purchase information with the store on your device and uses purchase records to determine whether premium features are unlocked. Ocoee Studios does not operate a purchase-validation server. The respective platform's privacy policy governs payment processing. The Billing library's technical data handling is described in the Technical Data section below.</p>
 
   <h2>6. Third-Party Services</h2>
-  <p><strong>On iOS:</strong></p>
-  <p><strong>Apple StoreKit:</strong> Handles in-app purchase processing according to Apple's Privacy Policy.</p>
-  <p><strong>Apple HealthKit:</strong> Provides read-only access to sleep data with your permission. Data stays on your device.</p>
-  <p><strong>Apple LocalAuthentication:</strong> Handles Face ID / Touch ID for app lock. Biometric data stays on your device.</p>
+  <p><strong>Apple StoreKit:</strong> Handles in-app purchase processing on iOS according to Apple's Privacy Policy.</p>
+  <p><strong>Google Play Billing:</strong> Handles in-app purchase processing on Android according to Google's Privacy Policy. See the Technical Data section below.</p>
+  <p><strong>Apple HealthKit:</strong> Provides read-only access to sleep data on iOS with your permission. Data stays on your device.</p>
+  <p><strong>Android Health Connect:</strong> Provides read-only access to sleep data on Android with your permission. Data stays on your device.</p>
+  <p><strong>Apple LocalAuthentication:</strong> Handles Face ID / Touch ID for app lock on iOS. Biometric data stays on your device.</p>
+  <p><strong>Android BiometricPrompt:</strong> Handles fingerprint / face authentication for app lock on Android. Biometric data stays on your device.</p>
+  <p>Inkluna does not use advertising or analytics services.</p>
 
-  <p><strong>On Android:</strong></p>
-  <p><strong>Google Play Billing:</strong> Handles in-app purchase processing according to Google's Privacy Policy. Inkluna checks purchase records returned by Google Play to determine access. Ocoee Studios does not receive credit card details through the app.</p>
-  <p><strong>Health Connect:</strong> Provides read-only access to sleep session data with your permission. Data stays on your device and is never transmitted to any server.</p>
-  <p><strong>Android Biometric / Keystore:</strong> Handles fingerprint and biometric authentication for app lock. Biometric data stays on your device. App-lock credentials use encrypted storage backed by Android Keystore.</p>
+  <h2>7. Technical Data</h2>
+  <p>Android purchases use the Google Play Billing library, which communicates with Google Play Services on your device. Google Play Services may exchange technical information with Google as part of purchase processing — for example, your device model, OS version, and app version. Inkluna does not collect advertising identifiers, hardware serial numbers, or persistent device identifiers, and does not contain analytics, crash reporting, or advertising SDKs. Ocoee Studios does not operate a server that receives technical data from the Billing library. Google's handling of data from Google Play Services is governed by Google's Privacy Policy.</p>
 
-  <p>Inkluna does not use advertising or analytics services. The platform services listed above support purchases, optional sleep-data access, and app lock.</p>
+  <h2>8. Notifications</h2>
+  <p>Inkluna can send you a morning reminder to record your dreams. These notifications are scheduled and delivered on your device. On iOS, notifications use the local notification system. On Android (versionCode 7), notifications use a local scheduling adapter that does not request remote push notification tokens.</p>
 
-  <h2>7. Notifications</h2>
-  <p>Inkluna can send you a morning reminder to record your dreams. These notifications are scheduled and delivered entirely on your device. On iOS, notifications use the local notification system. On Android, notifications use local alarm scheduling. No notification data is sent to any server, and no push notification tokens are requested or transmitted.</p>
+  <h2>9. Data Export</h2>
+  <p>You can export your dream journal at any time. Exported data is generated on your device and shared using your device's share sheet. We do not receive, process, or store your exported data. Where and how you share or save the export is entirely your choice.</p>
 
-  <h2>8. Data Export</h2>
-  <p>You can export your dream journal at any time. Exported data is generated on your device and shared using your device's share functionality. We do not receive, process, or store your exported data. Where and how you share or save the export is entirely your choice.</p>
-
-  <h2>9. Children's Privacy</h2>
+  <h2>10. Children's Privacy</h2>
   <p>Inkluna is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete it.</p>
 
-  <h2>10. Data Retention & Deletion</h2>
-  <p>Since your data is stored on your device, you have full control. You can delete individual dreams, reset your entire journal, or delete the app to remove all data. We do not retain any of your data on any server.</p>
+  <h2>11. Data Retention & Deletion</h2>
+  <p>Since your journal data is stored on your device, you have full control over it. You can delete individual dreams, reset your entire journal, or uninstall Inkluna to remove its local app data. These controls do not by themselves delete store purchase records or data retained by platform services. If your device backs up to iCloud or Google, backed-up app data is governed by the respective platform's terms.</p>
 
-  <h2>11. Your Rights</h2>
-  <p>You have the right to: access all your data (it's on your device), delete your data at any time, export your dream journal, and disconnect sleep data access at any time. No account is required to use Inkluna.</p>
+  <h2>12. Your Rights</h2>
+  <p>You have the right to: access all your local data (it's on your device), delete your local journal data at any time, export your dream journal, and disconnect Apple Health or Health Connect at any time. No account is required to use Inkluna.</p>
 
-  <h2>12. Changes to This Policy</h2>
+  <h2>13. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the App. Continued use after changes constitutes acceptance.</p>
 
-  <h2>13. Contact Us</h2>
+  <h2>14. Contact Us</h2>
   <p>For privacy questions or concerns, contact us at <a href="mailto:privacy@ocoeestudios.com">privacy@ocoeestudios.com</a>.</p>
 
   <div class="footer">
